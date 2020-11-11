@@ -1,0 +1,10 @@
+out
+out-test
+node_modules
+.vscode-test
+src/resource/**/*.md
+**/*.vsix
+dist
+token.ts
+token.js
+yarn-error.log

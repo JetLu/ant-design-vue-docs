@@ -1,0 +1,24 @@
+# development
+.github/**
+.vscode/**
+.vscode-test/**
+# doc-resource/**
+node_modules/**
+out/**
+out-test/**
+script/**
+src/**
+test/**
+.editorconfig
+.gitignore
+.prettierrc.js
+CONTRIBUTING.md
+tsconfig.json
+tsconfig.options.json
+tslint.json
+webpack.config.js
+yarn.lock
+yarn-error.log
+# build dist
+**/*.vsix
+**/*.gif

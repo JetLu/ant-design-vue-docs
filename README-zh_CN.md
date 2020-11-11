@@ -30,63 +30,63 @@ Rush to Ant Design in VS Code
 
 [Download from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=fi3ework.vscode-antd-rush)
 
-English | [中文](./README-zh_CN.md)
+[English](./README.md) | 中文
 
-## Feature
+## 特性
 
-- 💬 Show official documentation for Ant Design component and props
-- ⚡️ Insert component method handler automatically
-- 🗂 Support multiple version documentations (3.x / 4.x)
-- 🌐 Support Chinese and English documentation
+- 💬 为 Ant Design 组件及属性显示对应官方文档
+- ⚡️ 自动插入组件 handler
+- 🗂 支持多版本文档（3.x / 4.x）
+- 🌐 支持中/英文档
 
-## Caveat
+## 提示
 
-- Currently used version of the Ant Design 3.x documentation is **3.26.18** (latest at 2020/10/18), 4.x uses **4.7.0** (latest at 2020/10/18)
-- `@types/react` is required to be installed in userland project
+- 当前使用的 Ant Design 3.x 版本文档为 **3.26.18** (latest at 2020/10/18)，4.x 版本文档为 **4.7.0** (latest at 2020/10/18)
+- 需要用户的项目中安装了 `@types/react`
 
-## Usage
+## 功能
 
-### Switch antd major version
+### 切换 antd 版本
 
-Extension support both v3 and v4 documentation, v3 by default (it will changed to v4 in the future). You can change the default version and set version of each workspace.
+同时支持 antd v3 和 v4 版本的文档，默认为 v3（之后会转为 v4），你可以更改使用默认的文档版本，也可以更改每个工作区使用的 antd 版本号。
 
-#### Change default version
+#### 更改默认版本
 
 1. <kbd>⌘</kbd> + <kbd>,</kbd> (macOS), <kbd>Ctrl</kbd> + <kbd>,</kbd> (Windows)
-2. Input `Antd Rush: Default Antd Major Version`
-3. Select default version
+2. 输入 `Antd Rush: Default Antd Major Version`
+3. 选择默认版本
 
-#### Change workspace version
+#### 更改工作区版本
 
 1. <kbd>⌘</kbd> + <kbd>shift</kbd> + <kbd>P</kbd> (macOS), <kbd>Ctrl </kbd> + <kbd>shift</kbd> + <kbd>P</kbd> (Windows)
-2. Input `antdrush: set antd version of current workspace`
-3. Select version of current workspace
+2. 输入 `antdrush: set antd version of current workspace`
+3. 选择当前工作区的版本
 
-### Component props table hover hint
+### 悬浮提示组件 props 表格
 
-- Hover on component to get component description hint
-- Provide Ant Design documentation page link of component
+- 悬浮在组件上显示官方文档的组件详情
+- 提供链接直接跳转到 Ant Design 的官方文档页面
 
 <img src="assets/hover-component.gif">
 
-### Props detail hover hint
+### 悬浮提示 props 详情
 
-- Hover on component props to get props description hint
+- 悬浮在 props 上显示官方文档的 props 详情
 
 <img src="assets/hover-props.gif">
 
-### Insert method handler automatically
+### 自动插入 method handler
 
-- Trigger `!` to auto insert handler with default prefix (default prefix is `handle`, it's configurable)
-- Trigger `~` to insert handler after handler name inquiry
-- TypeScript type annotation will not be added for now
-- class component insertion template is
+- 触发 `!` 自动插入带默认前缀的 handler（默认前缀预置为 `handle`，可配置）
+- 触发 `~` 在提示输入 handler name 后插入
+- 暂时不会为 TypeScript 自动添加类型标注
+- class component 插入的模板为
 
 ```jsx
 this.handleMethod = () => {}
 ```
 
-- functional component insertion template is
+- functional component 插入的模板为
 
 ```jsx
 const handleMethod = useCallback(() => {})
